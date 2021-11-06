@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/hidden.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar-shopping.css">
+    <link rel="stylesheet" type="text/css" href="css/alert-message.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="css/hidden-table.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pesquisar Conta</title>
+</head>
+<body>
+    
+    <header id="hdr">
+    </header>
+
+    <main class="row">
+        
+        <div id="general-menu-bar" class="menu column hidden">
+        </div>
+
+        <div class="column width100 main-content-container">
+
+
+            <div class="alert-container align-center column">
+                <div class="align-center" id="alert-message"></div>
+            </div>
+
+
+            <section id="research-account-section">
+                <form>
+                    <h2>busque pela conta</h2>
+                    <p>Para encontrar um cadastro específico, preencha um dos campos de filtro e o resultado será apresentado automaticamente na tabela abaixo.</p>
+                    <div class="column">
+                        <div class="column">
+                            <div class="row align-center width100">
+                                <div class="account-input-container">
+                                    <input id="research-account-code" type="number" placeholder="Código">
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="research-account-email" type="email" placeholder="E-mail">
+                                </div>
+                            </div>  
+                            <div class="row align-center width100">
+                                <div class="account-input-container description-width80">
+                                    <input id="research-account-name" type="text" placeholder="Nome">
+                                </div>
+                            </div>               
+                        </div>
+                    </div>
+                </form>
+                <div id="all-registered-account-result-container" class="table-container">
+                    <div>
+                        <h2>resultado da pesquisa</h2> 
+                    </div>
+                    <div id="all-registered-account-table" class="table hidden">
+                        <div id="registration-line" class="thead tr">
+                            <div class="thead-td thead-td-code">
+                                código
+                            </div>
+                            <div class="thead-td thead-td-name-email">
+                                nome
+                            </div>
+                            <div class="thead-td thead-td-name-email">
+                                e-mail
+                            </div>
+                            <div class="thead-td thead-td-phone-password">
+                                telefone
+                            </div>
+                            <div class="thead-td thead-td-phone-password">
+                                senha
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </div>
+
+        <div id="shopping-cart-bar" class="shopping-cart-bar column hidden">
+        </div>
+
+    </main>
+    
+    <footer id="ftr">
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/open-page.js"></script>
+    <script src="js/search-account.js"></script>
+    <script src="js/common-content.js"></script>
+    <script src="js/side-shopping-cart.js"></script>
+</body>
+</html>

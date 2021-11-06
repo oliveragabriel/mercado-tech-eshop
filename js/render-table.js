@@ -1,0 +1,27 @@
+function addRemovedAccountOnTable(removedAcc) {
+    let accountLine = document.createElement('div');
+    let idTd = document.createElement('div');
+    let nameTd = document.createElement('div');
+    let emailTd = document.createElement('div');
+    let phoneTd = document.createElement('div');
+    let passwordTd = document.createElement('div');
+    idTd.textContent = removedAcc.code;
+    nameTd.textContent = `${removedAcc.firstname} ${removedAcc.surname}`;
+    emailTd.textContent = removedAcc.email;
+    phoneTd.textContent = removedAcc.phone;
+    passwordTd.textContent = removedAcc.password;
+    accountLine.appendChild(idTd);
+    accountLine.appendChild(nameTd);
+    accountLine.appendChild(emailTd);
+    accountLine.appendChild(phoneTd);
+    accountLine.appendChild(passwordTd);
+    let createLine = document.querySelector('#recent-deleted-account-table');
+    createLine.classList.remove('hidden');
+    createLine.appendChild(accountLine);
+    accountLine.classList.add('tr-account');
+    idTd.classList.add('tbody-td','tbody-td-code');
+    nameTd.classList.add('tbody-td','tbody-td-name');
+    emailTd.classList.add('tbody-td','tbody-td-email');
+    phoneTd.classList.add('tbody-td','tbody-td-phone-password');
+    passwordTd.classList.add('tbody-td','tbody-td-phone-password');
+};

@@ -1,0 +1,107 @@
+.table-container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 75%;
+    padding: 2em;
+    border-radius: 6px;
+}
+.note-above-table {
+    text-transform: uppercase;
+    font-size: small;
+}
+.table {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 10px;   
+}
+.tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+/*<!-- first commit - feat: adding icon manipulation and product counter to the shopping cart -->
+Cada linha gerada pela tabela poderá ser encontrada por esta classe, para encontrar uma linha específica será necessário selecionar todos os elementos com esta classe. No caso, é só dar um querySelectorAll nesta classe.*/
+.tr-account {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+.tr-product {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+.thead {
+    border-bottom: 2px solid #5271ff;
+}
+.thead-td {
+    font-weight: bold;
+    font-size: small;
+    text-transform: uppercase;
+}
+.thead-td-code {
+    width: 10%;
+}
+.thead-td-name-email {
+    width: 29%;
+}
+.thead-td-phone-password {
+    width: 14%;
+}
+.thead-td-product-code {
+    width: 10%;
+}
+.thead-td-product-name-description {
+    width: 29%;
+}
+.thead-td-product-stock {
+    width: 14%;
+}
+.thead-td-product-value {
+    width: 14%;
+}
+.tbody-td {
+    font-size: smaller;
+}
+.tbody-td-code {
+    width: 10%;
+}
+.tbody-td-name {
+    width: 29%;
+    text-transform: capitalize;
+}
+.tbody-td-email {
+    width: 29%;
+    text-transform: lowercase;
+}
+
+.tbody-td-phone {
+    width: 14%;
+}
+
+.tbody-td-password {
+    width: 14%;
+}
+
+.tbody-td-description {
+    width: 29%;
+    text-transform: lowercase;
+}
+
+.tbody-td-quantity {
+    width: 14%;
+}
+
+.tbody-td-value {
+    width: 14%;
+}

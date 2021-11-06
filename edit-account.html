@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/hidden.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar-shopping.css">
+    <link rel="stylesheet" type="text/css" href="css/alert-message.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Editar Conta</title>
+</head>
+<body>
+    
+    <header id="hdr">
+    </header>
+
+    <main class="row">
+        <div id="general-menu-bar" class="menu column hidden">
+        </div>
+
+        <div class="column width100 main-content-container">
+
+
+            <div class="alert-container align-center column">
+                <div class="align-center" id="alert-message"></div>
+            </div>
+
+            <section id="search-account-edit-section">
+                <form>
+                    <h2>editar conta</h2>
+                    <p>Para editar um cadastro, preencha apenas um dos campos de filtro abaixo e clique no botão Pesquisar.</p>
+                    <div class="column">
+                        <div class="column">
+                            <div class="row align-center width100">
+                                <input id="search-account-code-to-edit" type="number" placeholder="Digite o código da conta">
+                                <input id="search-account-email-to-edit" type="email" placeholder="Digite o e-mail da conta">  
+                            </div>  
+                            <div class="row align-center">
+                                <button class="form-button" type="button" onclick="searchAccountToEdit(); return false">pesquisar</button>
+                            </div>                
+                        </div>
+
+                    </div>
+                </form>
+                <div id="all-registered-account-result-container" class="table-container">
+                    <div>
+                        <h2>contas cadastradas</h2> 
+                    </div>
+                    <div id="all-registered-account-table" class="table hidden">
+                        <div id="registration-line" class="thead tr">
+                            <div class="thead-td thead-td-code">
+                                código
+                            </div>
+                            <div class="thead-td thead-td-name-email">
+                                nome
+                            </div>
+                            <div class="thead-td thead-td-name-email">
+                                e-mail
+                            </div>
+                            <div class="thead-td thead-td-phone-password">
+                                telefone
+                            </div>
+                            <div class="thead-td thead-td-phone-password">
+                                senha
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden" id="account-edit-section">
+                <form>
+                    <h2>meus dados</h2>
+                    <div class="column">
+                        <div class="column">
+                            <div class="row align-center width100">
+                                <div class="account-label-container">
+                                    <label>código:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-code" type="number" readonly>
+                                </div>
+                                <div class="account-label-container">
+                                    <label>cpf:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-cpf" type="number">
+                                </div>
+                            </div>  
+                            <div class="row align-center width100">
+                                <div class="account-label-container">
+                                    <label>nome:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-firstname" type="text" required>
+                                </div>
+                                <div class="account-label-container">
+                                    <label>sobrenome:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-surname" type="text" required>
+                                </div>
+                            </div>
+                            <div class="row align-center width100">
+                                <div class="account-label-container">
+                                    <label>e-mail:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-email" type="email" required>
+                                </div>
+                                <div class="account-label-container">
+                                    <label>telefone:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-phone" type="tel" required>
+                                </div>
+                            </div>  
+                            <div class="row align-center width100">
+                                <div class="account-label-container">
+                                    <label>nacionalidade:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-nationality" type="text">
+                                </div>
+                                <div class="account-label-container">
+                                    <label>senha:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-password" type="password" required >
+                                    <div class="eye-button-container" onclick="addAndRemovePasswordMask(); return false">
+                                        <button id="edit-eye-button-to-remove-password-mask"><i class="fa fa-eye eye-icon" aria-hidden="true"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                    <h2>meu endereço</h2>
+                    <div class="column">
+                        <div class="column">
+                            <div class="row align-center width100">
+                                <div class="account-label-container">
+                                    <label>cep:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-address-postal-code" type="number">
+                                </div>
+                                <div class="account-label-container">
+                                    <label>rua:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-address-street" type="text">
+                                </div>
+                            </div>  
+                            <div class="row align-center width100">
+                                <div class="account-label-container">
+                                    <label>bairro:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-address-district" type="text">
+                                </div>
+                                <div class="account-label-container">
+                                    <label>cidade:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-address-city" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                    <h2>meu cartão</h2>
+                    <div class="column">
+                        <div class="column">
+                            <div class="row align-center width100">
+                                <div class="account-label-container">
+                                    <label>número:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-card-number" type="number">
+                                </div>
+                                <div class="account-label-container">
+                                    <label>cvv:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-card-security-number" type="number">
+                                </div>
+                            </div>  
+                            <div class="row align-center width100">
+                                <div class="account-label-container">
+                                    <label>validade:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-card-validity" type="month">
+                                </div>
+                                <div class="account-label-container">
+                                    <label>nome do titular:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="account-card-holder-name" type="text">
+                                </div>
+                            </div>
+                    
+                            <div class="row align-center">
+                                <button class="form-button" type="button" onclick="editAccountData(objectBeingEdited); return false">alterar</button>
+                                <button class="form-button" type="button" onclick="removeAccountDataInEdition(objectBeingEdited); return false">excluir</button>
+                                <button class="form-button" type="button" onclick="showSearchPageToEditAccount()">voltar</button>
+                            </div>                
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <div id="shopping-cart-bar" class="shopping-cart-bar column hidden">
+        </div>
+
+    </main>
+    
+    <footer id="ftr">
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/open-page.js"></script>
+    <script src="js/edit-account.js"></script>
+    <script src="js/common-content.js"></script>
+    <script src="js/side-shopping-cart.js"></script>
+</body>
+</html>

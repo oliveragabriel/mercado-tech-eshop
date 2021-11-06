@@ -1,0 +1,40 @@
+.menu {
+    background-color: #ffde59;
+    position: initial;
+    margin: 0;
+    width: 20%;
+    border-right: 2px solid rgb(207, 195, 85);
+}
+.menu-button {
+    background-color: khaki;
+    display: flex;
+    align-items: center;
+    height: 35px;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-bottom: 2px solid rgb(219, 209, 112);
+    text-transform: uppercase;
+    font-size: x-small;
+}
+.menu-button:hover{
+    background-color: rgb(219, 209, 112);
+}
+.menu-header {
+    background-color: #ffde59;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 20px;
+    padding: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-header i {
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    color: #5271ff;
+    font-size: large;
+}

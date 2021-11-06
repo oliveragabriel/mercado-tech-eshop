@@ -1,0 +1,40 @@
+footer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    height: 6em;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    width: 19%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.footer-topics {
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+}
+
+.footer-text {
+    text-transform: inherit;
+    font-size: smaller;
+}
+
+.footer-icon {
+    color: #5271ff;
+    font-size: large;
+}
+
+.creator-rights {
+    text-transform: uppercase;
+    font-size: x-small;
+}

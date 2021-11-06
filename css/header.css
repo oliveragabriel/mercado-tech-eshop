@@ -1,0 +1,43 @@
+header {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+}
+.header-img-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 49%;
+    margin: 1em;
+}
+.header-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 49%;
+    margin: 1em;
+}
+
+header img {
+    height: 6em;
+}
+
+header i {
+    color: #5271ff;
+}
+
+header button {
+    background-color: white;
+    margin: 1em 1em 1em 1em;
+    border: 0;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+header button:hover {
+    background-color: lightgray;
+}
+
+.header-button-icon {
+    font-size: 12px;
+}

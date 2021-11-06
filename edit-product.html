@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/hidden.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar-menu.css">
+    <link rel="stylesheet" type="text/css" href="css/sidebar-shopping.css">
+    <link rel="stylesheet" type="text/css" href="css/alert-message.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/table.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Editar Produto</title>
+</head>
+<body>
+    
+    <header id="hdr">
+    </header>
+
+    <main class="row">
+        
+        <div id="general-menu-bar" class="menu column hidden">
+        </div>
+
+        <div class="column width100 main-content-container">
+            
+            
+            <div class="alert-container align-center column">
+                <div class="align-center" id="alert-message"></div>
+            </div>
+
+            
+            <section id="search-product-edit-section">
+                <form>
+                    <h2>editar produto</h2>
+                    <p>Para editar um produto, preencha o campo de filtro abaixo e clique no botão Pesquisar.</p>
+                    <div class="column">
+                        <div class="column">
+                            <div class="row align-center width100">
+                                <input id="search-product-code-to-edit" type="number" placeholder="Digite o código do produto">
+                            </div>  
+                            <div class="row align-center">
+                                <button class="form-button" type="button" onclick="searchProductToEdit(); return false">pesquisar</button>
+                            </div>                
+                        </div>
+
+                    </div>
+                </form>
+                <div id="all-registered-account-result-container" class="table-container">
+                    <div>
+                        <h2>produtos cadastrados</h2> 
+                    </div>
+                    <div id="all-registered-product-table" class="table hidden">
+                        <div id="registration-line" class="thead tr">
+                            <div class="thead-td thead-td-product-code">
+                                código
+                            </div>
+                            <div class="thead-td thead-td-product-name-description">
+                                nome
+                            </div>
+                            <div class="thead-td thead-td-product-name-description">
+                                descrição
+                            </div>
+                            <div class="thead-td thead-td-product-stock">
+                                quantidade
+                            </div>
+                            <div class="thead-td thead-td-product-value">
+                                valor
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="hidden" id="product-edit-section">
+                <form>
+                    <h2>produto</h2>
+                    <p>Para editar um produto, altere os campos desejados e clique no botão Alterar.</p>
+                    <div class="column">
+                        <div class="column">
+                            <div class="row align-center width100">
+                                <div class="account-label-container">
+                                    <label>código:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="product-code" type="number" readonly>
+                                </div>
+                                <div class="account-label-container">
+                                    <label>nome:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="product-name" type="text" required>
+                                </div>
+                            </div>  
+                            <div class="row align-center width100">
+                                <div class="account-label-container">
+                                    <label>quantidade:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="product-stock-quantity" type="number" required>
+                                </div>
+                                <div class="account-label-container">
+                                    <label>valor:</label>
+                                </div>
+                                <div class="account-input-container">
+                                    <input id="product-value" type="number" placeholder="R$ 0,00" required>
+                                </div>
+                            </div>
+                            <div class="row align-center width100">
+                                <div class="account-label-container">
+                                    <label>descrição:</label>
+                                </div>
+                                <div class="account-input-container description-width80">
+                                    <input id="product-description" type="text" required>
+                                </div>
+                            </div>    
+                            <div class="row align-center">
+                                <button class="form-button" type="button" onclick="editProductData(objectBeingEdited); return false">alterar</button>
+                                <button class="form-button" type="button" onclick="removeProductDataInEdition(objectBeingEdited); return false">excluir</button>
+                                <button class="form-button" type="button" onclick="showSearchPageToEditProduct()">voltar</button>
+                            </div>                
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+
+        </div>
+
+        <div id="shopping-cart-bar" class="shopping-cart-bar column hidden">
+        </div>
+
+    </main>
+    
+    <footer id="ftr">
+    </footer>
+
+    <script src="js/index.js"></script>
+    <script src="js/open-page.js"></script>
+    <script src="js/edit-product.js"></script>
+    <script src="js/common-content.js"></script>
+    <script src="js/side-shopping-cart.js"></script>
+</body>
+</html>

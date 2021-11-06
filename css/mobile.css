@@ -1,0 +1,48 @@
+@media only screen and (max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .header-img-container {
+        justify-content: center;
+        width: 100%;
+        margin: 1em 0em 1em 0em;
+    }
+    .header-button-container {
+        flex-direction: column;
+        width: 100%;
+        margin: 0em 0em 1em 0em;
+    }
+    header button {
+        width: 80%;
+    }
+    .menu {
+        width: 100%;
+    }
+    form button {
+        width: 90%;
+    }
+    .account-input-container {
+        width: 100%;
+    }
+    .tr {
+        flex-direction: column;
+    }
+    .tr-account{
+        flex-direction: column;
+    }
+    .tr-product{
+        flex-direction: column;
+    }
+    .footer-column {
+        width: 100%;
+        align-items: center;
+    }
+
+    iframe {
+        margin: 0;
+        width: 90%;
+    }
+}

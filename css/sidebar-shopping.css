@@ -1,0 +1,106 @@
+.shopping-cart-bar {
+    background-color: #ffde59;
+    position: initial;
+    align-items: center;
+    margin: 0;
+    width: 20%;
+    border-left: 2px solid rgb(207, 195, 85);
+}
+
+.table-container-shopping-cart {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 82%;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 6px;
+}
+
+.cart-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+}
+
+.cart-thead {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+}
+
+.tbody-td-shopping-cart-delete {
+    background-color: aliceblue;
+    border: none;
+    margin: 0;
+    color: #5271ff;
+}
+
+.tbody-td-shopping-cart-more-less {
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px black;
+    background-color: #7a90f5;
+    border: 1px solid #5271ff;
+}
+
+.tbody-td-shopping-cart-more-lessn:active {
+    margin: 10px;
+    transition: 0.10;
+}
+.tbody-td-shopping-cart-more-less:hover {
+    background-color: #5271ff;
+}
+
+.count-shopping-cart-product-quantity {
+    color: black;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.cart-foot {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: small;
+}
+
+.cart-button {
+    width: 90%;
+    margin: 2em 1em 1em 1em;
+    padding: 1em;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    box-shadow: 1px 1px 1px 1px black;
+    background-color: #7a90f5;
+    border: 1px solid #5271ff;
+}
+.cart-button:active {
+    margin: 10px;
+    transition: 0.10;
+}
+.cart-button:hover {
+    background-color: #5271ff;
+}
+
+.product-counter-and-shopping-cart-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product-counter-container-in-shopping-cart {
+    background-color: lightcoral;
+    z-index: 1;
+    position: absolute;
+    border-radius: 12px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.number-of-product-counter-in-shopping-cart {
+    font-size: medium;
+    font-weight: bold;
+    padding: 6px;
+    margin: 0px 3px 0px 3px;
+}
