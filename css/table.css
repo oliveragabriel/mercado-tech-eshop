@@ -25,8 +25,7 @@
     justify-content: space-evenly;
     padding: 1em;
 }
-/*<!-- first commit - feat: adding icon manipulation and product counter to the shopping cart -->
-Cada linha gerada pela tabela poderá ser encontrada por esta classe, para encontrar uma linha específica será necessário selecionar todos os elementos com esta classe. No caso, é só dar um querySelectorAll nesta classe.*/
+/* Cada linha gerada pela tabela poderá ser encontrada por esta classe, para encontrar uma linha específica será necessário selecionar todos os elementos com esta classe. No caso, é só dar um querySelectorAll nesta classe.*/
 .tr-account {
     display: flex;
     flex-direction: row;

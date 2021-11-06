@@ -21,9 +21,27 @@
     .menu {
         width: 100%;
     }
+    .shopping-cart-bar {
+        width: 100%;
+        text-align: center;
+    }
+
+    .eye-icon-register {
+        margin: -3em 0em -1em 12em;
+    }
+
+    .eye-icon-edit {
+        margin: 0em 0em 0em -1em;
+    }
+
     form button {
         width: 90%;
     }
+
+    .table-container-shopping-cart {
+        width: 80%;
+    }
+
     .account-input-container {
         width: 100%;
     }
