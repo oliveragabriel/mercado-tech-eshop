@@ -240,7 +240,9 @@ function successfulAccountRegistration(fullname) {
     
     setTimeout(function(){ 
         let element = document.getElementById(`alert-message`);
-        element.classList.add('hidden'); }, 5000);
+        element.classList.add('hidden'); 
+        window.location.href = 'login.html'    
+        }, 5000);
 };
 
 function addAndRemovePasswordMask() {

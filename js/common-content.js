@@ -15,6 +15,7 @@ document.getElementById('hdr').innerHTML = `
             </div>
             <button class="icon" id="my-shopping-cart" type="button" title="Compras"><i class="fa fa-shopping-cart shopping-cart-icon" aria-hidden="true"></i></button>
         </div>
+        <button class="icon" id="my-account-data-button" type="button" title="Meus Dados" onclick="myAccountData(); return false"><i class="fa fa-user" aria-hidden="true"></i></button>
         <button class="icon" id="end-section-button" type="button" title="Sair" onclick=""><i class="fa fa-times-circle" aria-hidden="true"></i></button>
     </div>
 `;
